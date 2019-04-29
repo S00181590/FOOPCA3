@@ -24,10 +24,11 @@ namespace CA1
             InitializeComponent();
         }
 
+        User LoggedUser;
+
         public TrusteeWindow(User user):this()
         {
-            //do stuff
-            //user.
+            LoggedUser = user;
 
         }
 

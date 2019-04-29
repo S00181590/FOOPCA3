@@ -18,9 +18,12 @@
             <ColumnDefinition Width="31*"/>
             <ColumnDefinition Width="225*"/>
             <ColumnDefinition Width="76*"/>
-            <ColumnDefinition Width="363*"/>
+            <ColumnDefinition Width="268*"/>
+            <ColumnDefinition Width="95*"/>
             <ColumnDefinition Width="97*"/>
         </Grid.ColumnDefinitions>
+
+        <Button Content="Signed in as " ></Button>
 
         
     </Grid>
