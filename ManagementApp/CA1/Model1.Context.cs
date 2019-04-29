@@ -13,10 +13,10 @@ namespace CA1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class UsersContainer : DbContext
+    public partial class StorageEntities : DbContext
     {
-        public UsersContainer()
-            : base("name=UsersContainer")
+        public StorageEntities()
+            : base("name=StorageEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace CA1
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

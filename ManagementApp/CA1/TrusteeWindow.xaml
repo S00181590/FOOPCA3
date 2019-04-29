@@ -5,26 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CA1"
         mc:Ignorable="d"
-        Title="TrusteeWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="38*"/>
-            <RowDefinition Height="42*"/>
-            <RowDefinition Height="227*"/>
-            <RowDefinition Height="72*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="31*"/>
-            <ColumnDefinition Width="225*"/>
-            <ColumnDefinition Width="76*"/>
-            <ColumnDefinition Width="268*"/>
-            <ColumnDefinition Width="95*"/>
-            <ColumnDefinition Width="97*"/>
-        </Grid.ColumnDefinitions>
+        Title="TrusteeWindow" Height="450" Width="800" Background="Azure">
+    <TabControl TabStripPlacement="Left" Background="Beige">
 
-        <Button Content="Signed in as " ></Button>
+        <TabItem Width="50" Header="First" >
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="38*"/>
+                    <RowDefinition Height="42*"/>
+                    <RowDefinition Height="227*"/>
+                    <RowDefinition Height="72*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="31*"/>
+                    <ColumnDefinition Width="225*"/>
+                    <ColumnDefinition Width="76*"/>
+                    <ColumnDefinition Width="268*"/>
+                    <ColumnDefinition Width="95*"/>
+                    <ColumnDefinition Width="97*"/>
+                </Grid.ColumnDefinitions>
 
-        
-    </Grid>
+                <Button Name="Signed_btn" Content="Signed in as " Grid.Column="4" Grid.ColumnSpan="2" Margin="10"></Button>
+
+            </Grid>
+        </TabItem>
+    </TabControl>
 </Window>

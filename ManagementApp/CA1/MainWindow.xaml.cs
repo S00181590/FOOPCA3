@@ -20,7 +20,7 @@ namespace CA1
     /// </summary>
     public partial class MainWindow : Window
     {
-        UsersContainer db = new UsersContainer();
+        StorageEntities db = new StorageEntities();
 
         public User StatusUser;
 
@@ -50,7 +50,7 @@ namespace CA1
                             U = new User(RegNameBx.Text, RegPasBx.Text, "Protectorite");
                         }
 
-                        db.User.Add(U);
+                        db.Users.Add(U);
 
                     }
                 }
@@ -64,7 +64,7 @@ namespace CA1
 
             
 
-            var NamCon = from C in db.User
+            var NamCon = from C in db.Users
                          where C.Username == name
                          select C;
 
@@ -89,4 +89,20 @@ namespace CA1
 
         }
     }
+
+    public partial class User
+    {
+
+        public User()
+        {
+
+        }
+
+        public User(string name, string pw, string type)
+        {
+
+        }
+
+    }
+
 }

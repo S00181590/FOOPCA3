@@ -22,6 +22,8 @@ namespace CA1
         public TrusteeWindow()
         {
             InitializeComponent();
+
+            Signed_btn.Content = "Signed in as " + LoggedUser.Username;
         }
 
         User LoggedUser;
